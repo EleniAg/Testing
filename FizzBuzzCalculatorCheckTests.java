@@ -34,12 +34,4 @@ public class FizzBuzzCalculatorCheckTests extends Implication {
         assert(new FizzBuzzCalculator().stringOf(someInt).equals(String.valueOf("FizzBuzz")));
     }
     
-    
-    
-    @Test(expected=Exception.class)
-    public void testMultipleOfThreeAndFive(int someInt) {
-        imply(someInt < 3 && someInt > 15 && someInt % 3 == 0 && someInt % 5 == 0);
-
-        exception.expect(Exception.class);
-    }
 }
